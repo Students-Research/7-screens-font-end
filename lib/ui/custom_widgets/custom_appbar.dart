@@ -15,12 +15,19 @@ class CustomAppBar extends StatelessWidget {
         children: [
           Positioned(
             left: 30,
-            top: 58,
-            child: Image.asset(
-              'assets/drawar-icon.png',
-              height: 40.h,
-              width: 40.w,
-              fit: BoxFit.contain,
+            top: 40,
+            child: Column(
+              children: [
+                BackButton(
+                  color: Colors.white,
+                ),
+                Image.asset(
+                  'assets/drawar-icon.png',
+                  height: 40.h,
+                  width: 40.w,
+                  fit: BoxFit.contain,
+                ),
+              ],
             ),
           ),
           Positioned(

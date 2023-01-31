@@ -11,12 +11,12 @@ class BoatInfoScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomButtons(
-        button1Text: 'When do send SOS',
-        button1OnTap: () {},
-        button2Text: 'About UseaMy',
-        button2OnTap: () {},
-      ),
+      // bottomNavigationBar: BottomButtons(
+      //   button1Text: 'When do send SOS',
+      //   button1OnTap: () {},
+      //   button2Text: 'About UseaMy',
+      //   button2OnTap: () {},
+      // ),
       body: SingleChildScrollView(
         child: Column(
           children: [

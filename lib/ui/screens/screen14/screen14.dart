@@ -4,8 +4,8 @@ import 'package:useamy/core/constants/colors.dart';
 import 'package:useamy/core/constants/style.dart';
 import 'package:useamy/ui/custom_widgets/custom_appbar.dart';
 
-class Screen14 extends StatelessWidget {
-  const Screen14({super.key});
+class AboutScreen extends StatelessWidget {
+  const AboutScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
