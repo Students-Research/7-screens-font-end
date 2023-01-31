@@ -3,6 +3,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:useamy/ui/custom_widgets/custom_appbar.dart';
 import 'package:useamy/ui/custom_widgets/rout_button.dart';
 
+import '../boat_info/boat_info_screen.dart';
+import '../contact_info/contact_info_screen.dart';
+
 class NavigatorScreen extends StatelessWidget {
   const NavigatorScreen({super.key});
 
@@ -21,14 +24,28 @@ class NavigatorScreen extends StatelessWidget {
               children: [
                 RouteButton(
                   text: 'Boat Information Stored in device',
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const BoatInfoScreen(),
+                      ),
+                    );
+                  },
                 ),
                 SizedBox(
                   height: 20.h,
                 ),
                 RouteButton(
                   text: 'Contact Information Stored on a Mobile',
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const ContactInfoScreen(),
+                      ),
+                    );
+                  },
                 ),
                 SizedBox(
                   height: 20.h,
